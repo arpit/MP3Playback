@@ -1,3 +1,13 @@
 MP3Playback is a small library for playing back mp3 audio. 
 
 For more information see [my blog](http://www.arpitonline.com/blog/2007/11/05/free-as3-package-mp3playback/)
+
+Example usage:
+
+<pre>
+var mp3Playback:MP3Playback  = new MP3Playback();
+mp3Playback.addEventListener(MP3Playback.ON_ID3,onID3);	
+mp3Playback.addEventListener(MP3Playback.SONG_COMPLETE, onSongComplete);
+mp3Playback.addEventListener(IOErrorEvent.IO_ERROR, onIOError);
+mp3Playback.addEventListener(PlaybackProgressEvent.PLAYBACK_PROGRESS, onPlaybackProgress);
+</pre>
